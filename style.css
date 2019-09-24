@@ -579,6 +579,9 @@ button{
 .middle-rect-2-1{
     display: none;
 }
+#creative-agency-mobile{
+    display: none;
+}
 @media(max-width: 1800px) and (min-width: 1224px){
     .image{
         display: none;
@@ -835,4 +838,245 @@ button{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
+@media(max-width: 768px) and (min-width: 321px){
+    .image{
+        display: none;
+    }
+    #header{
+        background: url(Component\ 2\ –\ 1.png);
+    }
+    #creative{
+        left: 0;
+        margin-top: 250px;
+    }
+    #creative > p{
+        font-size: 144px;
+        letter-spacing: 1px;
+    }
+    #creative-agency{
+        display: none;
+    }
+    #creative-agency-mobile{
+        margin-top: 200px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    #creative-agency-mobile > p{
+        font-size: 72px;
+        font-weight: bold;
+    }
+    #video-intro{
+        display: none;
+    }
+    .balls{
+        display: none;
+    }
+    #nav-bar{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .links{
+        width: 50%;
+        justify-content: center;
+    }
+    .links > p{
+        display: none;
+    }
+    .links > a{
+        margin: 0;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .content-1{
+        height: 1650px;
+    }
+    .portfolio-link{
+        display: none;
+    }
+    .services{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-icons{
+        margin: 0;
+        margin-top: 80px;
+        width: 80%;
+    }
+    .icons-text > p{
+        font-size: 12px;
+    }
+    .portfolio{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio > p{
+        font-size: 72px;
+    }
+    .right-rect{
+        display: none;
+    }
+    .portfolio-images{
+        display: none;
+    }
+    .middle-rect-2-1{
+        display: block;
+    }
+    .middle-rect-2{
+        display: none;
+    }
+    .left-rect > img, .middle-rect-1 > img, .middle-rect-2-1 > img{
+        width: 90%;
+    }
+    .middle-rect-2-1{
+        margin-top: 25%;
+    }
+    .team-back{
+        display: none;
+    }
+    .content-2{
+        height: 2580px;
+    }
+    .team-persons{
+        flex-direction: column;
+    }
+    .team-member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .jam, .ema, .mike{
+        width: 224px;
+        height: 317px;
+        margin-bottom: 0;
+    }
+    .jam > img, .ema > img, .mike > img{
+        width: 300px; 
+    }
+    .jam > img{
+        margin-left: -35px;
+    }
+    .ema > img{
+        margin-left: -35px;
+    }
+    .mike > img{
+        margin-top: -38px;
+    }
+    .team > h6{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .team-persons{
+        margin-top: 100px;
+    }
+    .team-link{
+        margin-top: 2460px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .team-link > a{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 12%;
+    }
+    .winner-text{
+        display: none;
+    }
+    .achvmnts-back{
+        display: none;
+    }
+    .achvmnts{
+        width: 80%;
+        margin-left: 10%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .achvmnts > p{
+        font-size: 36px;
+    }
+    .awards{
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .award{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .award > p{
+        font-size: 20px;
+    }
+    .email{
+        width: 200px;
+    }
+    .email > form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        border-radius: 0;
+        width: 98.5%;
+        margin: 0;
+    }
+    input[type=email]{
+        margin: 0;
+        padding: 20px 10px;
+        border-radius: 0;
+    }
+    .contact-back{
+        display: none;
+    }
+    .contact > h3{
+        font-size: 28px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .social-net{
+        display: none;
+    }
+    .social-net > hr{
+        width: 100%;
+    }
+    .social-img{
+        justify-content: center;
+    }
+    .footer-content{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .footer-content > hr{
+        width: 100%;
+    }
+    .footer-links{
+        width: 100%;
+    }
+    .agency-text{
+        display: none;
+    }
+    .footer-links{
+        grid-template-columns: 2fr 1fr;
+    }
+    .footer-social{
+        display: none;
+    }
+}
