@@ -89,6 +89,9 @@ body{
     background: #502EFF;
     border-radius: 50%;
 }
+.video-intro:hover{
+    cursor: pointer;
+}
 .treangle{
     position: absolute;
     color: #ffffff;
@@ -793,6 +796,9 @@ button{
     .video-intro{
         margin-left: 50%;
     }
+    .content-1{
+        height: 2450px;
+    }
     .balls{
         display: none;
     }
@@ -828,7 +834,7 @@ button{
     }
     .portfolio{
         width: 50%;
-        margin: 150px 25% 0 25%;
+        margin: 150px 25% 200px 25%;
     }
     .right-rect{
         display: none;
@@ -856,7 +862,7 @@ button{
         display: none;
     }
     .content-2{
-        height: 3880px;
+        height: 3720px;
     }
     .team-persons{
         -webkit-box-orient: vertical;
@@ -878,9 +884,8 @@ button{
         margin-bottom: 100px;
     }
     .team-link{
-        margin-top: 3640px;
-        width: 76%;
-        margin-left: 12%;
+        margin-top: 0;
+        width: 100%;
     }
     .team{
         display: -webkit-box;
@@ -902,9 +907,9 @@ button{
         display: none;
     }
     .achvmnts{
-        width: 50%;
+        width: 75%;
         position: absolute;
-        margin-left: 25%;
+        margin-left: 12.5%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -918,6 +923,21 @@ button{
     }
     .awards{
         width: 100%;
+    }
+    .award{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .social-net{
         width: 100%;
@@ -1138,6 +1158,17 @@ button{
     .awards > *:nth-child(4){
         -ms-grid-row: 4;
         -ms-grid-column: 1;
+    }
+    .award{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .contact-back{
         display: none;
