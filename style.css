@@ -1,3 +1,9 @@
+a{
+  text-decoration: none; 
+}
+button{
+    cursor: pointer;
+}
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -12,7 +18,7 @@ body{
     position: absolute;
     z-index: 1;
 }
-#header{
+.header{
     height: 780px;
 }
 .header .container{
@@ -22,7 +28,7 @@ body{
 .container{
     margin: 0;
 }
-#creative{
+.creative{
     top: 85px;
     position: absolute;
     font-size: 246px;
@@ -40,11 +46,11 @@ body{
     text-align: center;
     opacity: 0.04;
 }
-#creative > p{
+.creative > p{
     margin: 0;
     text-shadow: 16px #000000;
 }
-#creative-agency{
+.creative-agency{
     font-size: 149px;
     width: 489px;
     height: 318px;
@@ -52,7 +58,7 @@ body{
     margin-top: 331px;
     line-height: 120px;
 }
-#video-intro{
+.video-intro{
     height: 100px;
     width: 311px;
     margin-top: 0;
@@ -74,6 +80,9 @@ body{
         -ms-flex-align: center;
             align-items: center;
 }
+.video-intro > p > a{
+    color: #000000;
+}
 .round{
     width: 100px;
     height: 100px;
@@ -87,7 +96,7 @@ body{
     margin: 20px 30px;
     border-radius: 25%;
 }
-#nav-bar{
+.nav-bar{
     position: absolute;
     z-index: 2;
     width: 79%;
@@ -106,7 +115,7 @@ body{
     margin-left: 232px;
     font-weight: bold;
 }
-#agency-logo{
+.agency-logo{
     height: 100%;
     width: 125px;
     margin: 0;
@@ -123,7 +132,7 @@ body{
     color: #000000;
     font-size: 28px;
 }
-#x{
+.x{
     background: #502EFF;
     color: #ffffff;
     width: 16px;
@@ -156,7 +165,8 @@ body{
         -ms-flex-align: center;
             align-items: center;
 }
-.links > p{
+.links > p > a{
+    color: #502EFF; 
     margin-right: 60px;
     font-size: 16px;
 }
@@ -175,11 +185,10 @@ body{
 }
 .container-1{
     height: 100%;
-    position: relative;
+    border: 1px solid transparent;
 }
 .balls{
-    position: absolute;
-    margin-top: 180px;
+    margin-top: 220px;
     margin-left: 1190px;
 }
 .services{
@@ -209,18 +218,13 @@ body{
     -ms-grid-row: 2;
     -ms-grid-column: 3;
 }
-.background-balls{
-    position: absolute;
-}
 .container-1{
-    background: url(assets/Group\ 1028.png);
+    background: url(assets/Group1028.png);
 }
 .portfolio{
-    position: absolute;
-    z-index: 1;
     width: 62%;
     padding: 0;
-    margin: 150px 19% 0 19%;
+    margin: -200px 19% 250px 19%;
 }
 .portfolio > p{
     color: #FFFFFF;
@@ -261,10 +265,9 @@ body{
     color: #FFFFFF;
 }
 .portfolio-images{
-    position: absolute;
     width: 98%;
     margin-left: 23px;
-    margin-top: 1212px;
+    margin-bottom: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -303,8 +306,6 @@ body{
 }
 .portfolio-link{
     width: 100%;
-    position: absolute;
-    margin-top: 2530px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -423,9 +424,8 @@ body{
     margin-left: -78px;
 }
 .team-link{
+    margin-top: 85px;
     width: 100%;
-    position: absolute;
-    margin-top: 1425px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -448,7 +448,7 @@ body{
 .container-3{
     width: 100%;
     height: 100%;
-    background: url(assets/Component\ 4\ –\ 1.png);
+    background: url(assets/Component4–1.png);
 }
 .winner{
     position: absolute;
@@ -489,7 +489,6 @@ body{
 }
 .achvmnts{
     width: 76%;
-    position: absolute;
     margin-left: 230px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -511,7 +510,7 @@ body{
     color: #502EFF;
 }
 .awards{
-    width: 930px;
+    width: 72%;
     margin-top: 120px;
     display: -ms-grid;
     display: grid;
@@ -558,14 +557,9 @@ body{
     background: #FFD34D;
 }
 .social-net{
-    position: absolute;
-    top:0;
-    bottom:0;  
-    left:0;
-    right:0;
-    margin-top: 1215px;
-    margin-left: 360px;
-    width: 1240px;
+    margin-top: 120px;
+    margin-left: 25%;
+    width: 75%;
 }
 .social-net > p{
     font-size: 16px;
@@ -601,9 +595,10 @@ body{
     width: 100%;
 }
 .contact-back{
+    z-index: 0;
     width: 100%;
     position: absolute;
-    margin-top: 160px;
+    margin-top: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -615,6 +610,8 @@ body{
     margin-left: 70px;
 }
 .contact{
+    z-index: 1;
+    margin-top: 180px;
     position: absolute;
     width: 100%;
     display: -webkit-box;
@@ -627,7 +624,6 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 190px;
 }
 .contact > p{
     margin: 0;
@@ -684,7 +680,7 @@ button{
 }
 .footer-content{
     width: 100%;
-    background: url(assets/Component\ 2\ –\ 1.png);
+    background: url(assets/Component2–1.png);
     font-weight: bold;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -769,7 +765,7 @@ button{
         -ms-flex-direction: column;
             flex-direction: column;
 }
-.agency-text #agency-logo{
+.agency-text .agency-logo{
     margin: 0;
     height: 37px;
 }
@@ -781,20 +777,20 @@ button{
 .middle-rect-2-1{
     display: none;
 }
-#creative-agency-mobile{
+.creative-agency-mobile{
     display: none;
 }
 @media(max-width: 1800px) and (min-width: 1224px){
     .image{
         display: none;
     }
-    #header{
-        background: url(assets/Component\ 2\ –\ 1.png);
+    .header{
+        background: url(assets/Component2–1.png);
     }
-    #creative-agency{
+    .creative-agency{
         margin-left: 50%;
     }
-    #video-intro{
+    .video-intro{
         margin-left: 50%;
     }
     .balls{
@@ -950,19 +946,19 @@ button{
     .image{
         display: none;
     }
-    #header{
-        background: url(assets/Component\ 2\ –\ 1.png);
+    .header{
+        background: url(assets/Component2–1.png);
     }
-    #creative-agency{
+    .creative-agency{
         margin-left: 15%;
     }
-    #video-intro{
+    .video-intro{
         margin-left: 15%;
     }
     .balls{
         display: none;
     }
-    #nav-bar{
+    .nav-bar{
         width: 80%;
         margin-left: 10%;
     }
@@ -982,7 +978,7 @@ button{
         height: 3150px;
     }
     .portfolio-link{
-        margin-top: 2930px;
+        margin-top: 150px;
     }
     .services{
         -ms-grid-rows: 2fr 2fr 2fr 2fr 2fr 1fr;
@@ -1016,7 +1012,7 @@ button{
     }
     .portfolio{
         width: 50%;
-        margin: 150px 25% 0 25%;
+        margin: 150px 25% 200px 25%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1033,7 +1029,6 @@ button{
     }
     .portfolio-images{
         width: 95%;
-        margin-top: 1960px;
         -ms-flex-pack: distribute;
             justify-content: space-around;
         -webkit-box-align: start;
@@ -1078,9 +1073,7 @@ button{
         margin-bottom: 100px;
     }
     .team-link{
-        margin-top: 3640px;
-        width: 76%;
-        margin-left: 12%;
+        width: 100%;
     }
     .team{
         display: -webkit-box;
@@ -1094,6 +1087,9 @@ button{
             -ms-flex-align: center;
                 align-items: center; 
         margin-left: 12%;
+    }
+    .team > h6{
+        font-size: 44px;
     }
     .winner-text{
         display: none;
@@ -1182,21 +1178,21 @@ button{
     .image{
         display: none;
     }
-    #header{
-        background: url(assets/Component\ 2\ –\ 1.png);
+    .header{
+        background: url(assets/Component2–1.png);
     }
-    #creative{
+    .creative{
         left: 0;
         margin-top: 250px;
     }
-    #creative > p{
+    .creative > p{
         font-size: 144px;
         letter-spacing: 1px;
     }
-    #creative-agency{
+    .creative-agency{
         display: none;
     }
-    #creative-agency-mobile{
+    .creative-agency-mobile{
         margin-top: 200px;
         width: 100%;
         position: absolute;
@@ -1207,17 +1203,17 @@ button{
             -ms-flex-pack: center;
                 justify-content: center;
     }
-    #creative-agency-mobile > p{
+    .creative-agency-mobile > p{
         font-size: 72px;
         font-weight: bold;
     }
-    #video-intro{
+    .video-intro{
         display: none;
     }
     .balls{
         display: none;
     }
-    #nav-bar{
+    .nav-bar{
         width: 90%;
         margin-left: 10%;
     }
@@ -1242,7 +1238,7 @@ button{
         display: none;
     }
     .services{
-        width: 80%;
+        width: 50%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1260,13 +1256,15 @@ button{
     .service-icons{
         margin: 0;
         margin-top: 80px;
-        width: 80%;
+        width: 100%;
     }
     .icons-text > p{
-        font-size: 12px;
+        font-size: 10px;
     }
     .portfolio{
+        width: 100%;
         margin-top: 20px;
+        margin-left: 0;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1342,16 +1340,14 @@ button{
         margin-top: -38px;
     }
     .team > h6{
-        font-size: 36px;
+        font-size: 20px;
         margin-top: 20px;
     }
     .team-persons{
         margin-top: 100px;
     }
     .team-link{
-        margin-top: 2460px;
-        width: 60%;
-        margin-left: 20%;
+        width: 100%;
     }
     .team-link > a{
         padding: 10px 20px;
@@ -1468,7 +1464,7 @@ button{
         display: none;
     }
     .contact > h3{
-        font-size: 28px;
+        font-size: 16px;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -1482,6 +1478,9 @@ button{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+    .footer{
+        height: 750px;
     }
     .footer-content{
         width: 80%;
@@ -1499,8 +1498,5 @@ button{
     .footer-links{
         -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
-    }
-    .footer-social{
-        display: none;
     }
 }
