@@ -174,6 +174,7 @@ body{
     font-size: 16px;
 }
 .links > a{
+    font-family: 'Work Sans', sans-serif;
     margin-left: 80px;
     background: #502EFF;
     color: #FFFFFF;
@@ -317,6 +318,7 @@ body{
             justify-content: center;
 }
 .portfolio-link > a{
+    font-family: 'Work Sans', sans-serif;
     background: #FFFFFF;
     color: #502EFF;
     padding: 25px 52px;
@@ -437,6 +439,8 @@ body{
             justify-content: center;
 }
 .team-link > a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
     font-size: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -966,6 +970,12 @@ button{
     .image{
         display: none;
     }
+    .portfolio-images{
+        display: none;
+    }
+    .content-1{
+        height: 2200px;
+    }
     .header{
         background: url(assets/Component2–1.png);
     }
@@ -993,9 +1003,6 @@ button{
     }
     .links > a{
         font-size: 16px;
-    }
-    .content-1{
-        height: 3150px;
     }
     .portfolio-link{
         margin-top: 150px;
@@ -1071,7 +1078,7 @@ button{
         display: none;
     }
     .content-2{
-        height: 3880px;
+        height: 3740px;
     }
     .team-persons{
         -webkit-box-orient: vertical;
@@ -1203,6 +1210,17 @@ button{
     .footer-links{
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    }    .footer-links > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }    .footer-links > *:nth-child(3){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }    .footer-links > *:nth-child(4){
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
     }
 }
 @media(max-width: 768px) and (min-width: 321px){
@@ -1266,7 +1284,10 @@ button{
         height: 1650px;
     }
     .portfolio-link{
-        display: none;
+        margin: 0;
+    }
+    .portfolio-link > a{
+        font-size: 16px;
     }
     .services{
         width: 50%;
@@ -1295,6 +1316,7 @@ button{
     .portfolio{
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 100px;
         margin-left: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1332,7 +1354,7 @@ button{
         display: none;
     }
     .content-2{
-        height: 2580px;
+        height: 2380px;
     }
     .team-persons{
         -webkit-box-orient: vertical;
@@ -1379,9 +1401,9 @@ button{
     }
     .team-link{
         width: 100%;
+        margin: 0;
     }
     .team-link > a{
-        padding: 10px 20px;
         font-size: 16px;
     }
     .team{
@@ -1396,6 +1418,7 @@ button{
             -ms-flex-align: center;
                 align-items: center; 
         margin-left: 12%;
+        margin-bottom: 0;
     }
     .winner-text{
         display: none;
@@ -1483,13 +1506,14 @@ button{
     }
     button{
         border-radius: 0;
-        width: 98.5%;
         margin: 0;
+        width: 100%;
     }
     input[type=email]{
         margin: 0;
         padding: 20px 10px;
         border-radius: 0;
+        width: 86%;
     }
     .contact-back{
         display: none;
@@ -1527,7 +1551,19 @@ button{
         display: none;
     }
     .footer-links{
-        -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    .footer-content > p{
+        font-size: 14px;
     }
 }
